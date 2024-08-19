@@ -1,0 +1,21 @@
+#conteiner{
+    width: 100%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+    border: 3px solid black;
+    width: 98%;
+}
+
+#coluna1{
+    float: left;
+    width: 30%;
+}
+
+#coluna2{
+    float: right;
+    width: 70%;
+    text-align: justify;
+}

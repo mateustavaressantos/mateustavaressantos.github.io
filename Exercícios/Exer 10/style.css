@@ -1,0 +1,22 @@
+.div0{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#div1, #div2, #div3{
+    width: 300px;
+    height: 300px;
+}
+
+#div1{
+    background-color: blue;
+}
+
+#div2{
+    background-color: red;
+}
+
+#div3{
+    background-color: green;
+}

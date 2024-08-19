@@ -1,0 +1,14 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#google:hover{
+    color: rgb(116, 50, 50);
+    font-weight: bold;
+}
+
+#youtube:hover{
+    color: rgb(95, 202, 202);
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+fieldset{
+    width: 500px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#radio{
+    background-color: rgb(183, 255, 255);
+}
+
+#checkbox{
+    background-color: rgb(179, 255, 182);
+}

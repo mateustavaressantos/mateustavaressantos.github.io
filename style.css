@@ -26,12 +26,11 @@ body.loaded {
 }
 
 main{
-    width: 65vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
 }
 
 .botao-caixa{
@@ -54,8 +53,8 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
     overflow: hidden;
+    margin: 10px;
 }
 
 .img-caixa {
@@ -71,6 +70,7 @@ main{
     font-size: 14pt;
     text-align: center;
     color: white;
+    margin: 30px;
 }
 
 #link-form{
@@ -101,7 +101,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 #img-mapa{
@@ -109,6 +108,7 @@ main{
     height: 80%;
     border: 5px solid black;
     border-radius: 30px;
+    margin: 10px;
 }
 
 #botao-mapa-menu, #botao-equipe-menu{
@@ -200,23 +200,25 @@ main{
     border-right: 1px solid #ccc;
     background-color: #e9ecef;
     height: 530px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #007bff #e9ecef;
 }
 
+.inner-tabs {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #007bff #e9ecef;
+}
+
+/* Chrome desktop / Edge / Safari */
 .inner-tabs::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
-
 .inner-tabs::-webkit-scrollbar-track {
-    background: #e9ecef;
-    border-radius: 4px;
+  background: #e9ecef;
+  border-radius: 4px;
 }
-
 .inner-tabs::-webkit-scrollbar-thumb {
-    background-color: #007bff;
-    border-radius: 4px;
+  background-color: #007bff;
+  border-radius: 4px;
 }
 
 .inner-tabs::-webkit-scrollbar-thumb:hover {
@@ -275,7 +277,6 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -294,6 +295,7 @@ main{
     color: #555;
     padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
 .tecnico-retangulo {
@@ -346,11 +348,9 @@ th {
 }
 
 .vertical-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-weight: bold;
-  color: white;
-  background: #e91e63;
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
 }
 
 .highlight {
@@ -372,7 +372,6 @@ th {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
 }
 
 .membros-container-horario{
@@ -382,6 +381,7 @@ th {
 
 .membros-container-horario p{
     font-size: 14pt;
+    margin: 10px;
 }
 
 .paragrafo-abertura {

@@ -254,7 +254,7 @@ main {
 }
 
 .titulo-equipe {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #007bff;
     text-align: center;
@@ -270,8 +270,8 @@ main {
 }
 
 .membro-quadrado {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     background-color: #f0f0f0;
     border: 2px solid #ccc;
     border-radius: 10px;

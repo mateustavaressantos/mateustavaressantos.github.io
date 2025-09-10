@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação do Evento</title>
+</head>
+<body>
+
+    <main>
+
+        <div id="div-botao-form">
+            <button id="iniciar-form">Responder Formulário</button>
+        </div>
+
+        <div id="div-botao-form">
+            <button id="voltar-menu">Voltar Para Menu</button>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="fechar-modal">&times;</span>
+                <form action="">
+                    <label for="perfil">Você é:</label>
+                    <select id="perfil" name="perfil" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="organizador">Organizador</option>
+                        <option value="participante">Participante</option>
+                        <option value="juiz">Juiz</option>
+                        <option value="visitante">Visitante</option>
+                    </select>
+
+                    <label>Como você soube do campeonato?</label>
+                    <div id="div-checkbox">
+                        <label><input type="checkbox" name="ouviu" value="escola"> Escola</label><br>
+                        <label><input type="checkbox" name="ouviu" value="amigos"> Amigos</label><br>
+                        <label><input type="checkbox" name="ouviu" value="redes"> Redes sociais</label><br>
+                        <label><input type="checkbox" name="ouviu" value="site"> Site da Prefeitura</label><br>
+                        <label><input type="checkbox" name="ouviu" value="outro"> Outro</label>
+                    </div>
+
+                    <label for="nota">Nota (0 a 10):</label>
+                    <input type="number" id="nota" name="nota" min="0" max="10" required>
+
+                    <label for="melhorar">Deixe aqui suas sugestões, críticas ou elogios:</label>
+                    <textarea id="melhorar" name="melhorar" rows="4" placeholder="Digite sua sugestão..." maxlength="500"></textarea>
+
+                    <button type="submit" id="botao-enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </main>    
+
+    <script src="script.js"></script>
+</body>
+</html>

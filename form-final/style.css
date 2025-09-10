@@ -198,8 +198,8 @@ button:hover {
 
 #enviado {
     width: 30%;
-    height: 40vh;
-    margin: 20px;
+    height: 45%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,7 +278,7 @@ button.loading::after {
 .banner{
     display:inline-block;
     position: relative;
-    margin: 10px;
+    margin: auto;
     width: 80%;
 }
 

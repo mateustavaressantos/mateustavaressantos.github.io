@@ -27,6 +27,7 @@ body.loaded {
     opacity: 1;
 }
 
+/* Layout padrão (desktop, celular etc.) continua com flex */
 main {
   width: 80vw;
   max-width: 1200px;
@@ -37,20 +38,35 @@ main {
   align-items: stretch;
 }
 
-main > .botao-caixa {
-  flex: 0 0 30%;
-  max-width: 380px;
-  display: block;
-}
+/* -------- Tablet em modo horizontal -------- */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px;
+    justify-items: center;
+  }
 
-main > .botao-caixa .caixa {
-  width: 100%;
-}
+  main > .botao-caixa {
+    width: 100%;
+    max-width: 300px;
+  }
 
-main > .botao-caixa:nth-child(1),
-main > .botao-caixa:nth-child(2) {
-  flex: 0 0 40%;
-  max-width: 420px;
+  /* Primeira linha: apenas 2 itens centralizados */
+  main > .botao-caixa:nth-child(1) {
+    grid-column: 1 / 2; /* começa na 1ª coluna */
+    grid-row: 1;
+  }
+
+  main > .botao-caixa:nth-child(2) {
+    grid-column: 3 / 4; /* vai para a 3ª coluna */
+    grid-row: 1;
+  }
+
+  /* Os demais (3, 4 e 5) ficam na segunda linha automaticamente */
+  main > .botao-caixa:nth-child(n+3) {
+    grid-row: 2;
+  }
 }
 
 .caixa {

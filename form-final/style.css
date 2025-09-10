@@ -268,7 +268,7 @@ button.loading::after {
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 60vh;
+  height: 50vh;
 }
 
 .banner{
@@ -294,14 +294,13 @@ button.loading::after {
 
 .ribbon.orange{
     background: var(--orange);
-    font-size: clamp(20px, 4vw, 60px);
+    font-size: 40pt;
     transform: rotate(-2.2deg);
 }
 
-
 .ribbon.blue{
     background: var(--blue);
-    font-size: clamp(16px, 3.6vw, 40px);
+    font-size: 26pt;
     transform: rotate(-6deg);
     margin-top: clamp(6px, 1vw, 12px);
 }

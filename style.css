@@ -44,7 +44,7 @@ main {
 }
 
 .caixa {
-    width: 320px;
+    width: 250px;
     max-width: 320px;
     height: 22vh;
     background-color: rgba(0, 90, 208);
